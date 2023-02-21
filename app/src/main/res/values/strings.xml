@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name"> LoveYouTừbé</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_setting">Setting</string>
+    <string name="favorite">Favorite</string>
+    <string name="historic">Historic</string>
+    <string name="playlist">Playlists</string>
+    <string name="subcription">Subcription</string>
+</resources>

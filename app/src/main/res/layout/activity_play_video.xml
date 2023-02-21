@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayVideo"
+    android:orientation="vertical">
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/play_video_scr">
+    </com.google.android.youtube.player.YouTubePlayerView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:id="@+id/title_plv"
+                android:layout_marginVertical="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black">
+
+            </TextView>
+            <TextView
+                android:id="@+id/owner_plv"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                >
+            </TextView>
+
+            <io.github.glailton.expandabletextview.ExpandableTextView
+                android:id="@+id/expand_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:collapsedLines="5"
+                app:animDuration="500"
+                app:readMoreText="More"
+                app:readLessText="Hide"
+                app:textMode="line"
+                app:isExpanded="false"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:paddingBottom="50dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

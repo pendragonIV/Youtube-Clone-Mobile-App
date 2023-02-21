@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:textColor="@color/red"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        >
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Username"-->
+        <!--            android:textSize="20dp"-->
+        <!--            />-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Username"
+            android:padding="8dp"
+            android:drawableLeft="@drawable/ic_baseline_boy_24"
+            android:background="@drawable/shape3"
+            android:id="@+id/username_register"
+            android:drawablePadding="8dp"
+            />
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Email"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:textSize="20dp"-->
+        <!--            />-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:background="@drawable/shape3"
+            android:layout_marginTop="30dp"
+            android:id="@+id/email_register"
+            android:padding="8dp"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="8dp"
+
+            />
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Password"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:textSize="20dp"-->
+        <!--            />-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:background="@drawable/shape3"
+            android:padding="8dp"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="30dp"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:id="@+id/password_register"
+            />
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Confirm Password"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:textSize="20dp"-->
+        <!--            />-->
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape3"
+            android:padding="8dp"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="30dp"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_baseline_password_24"
+            android:hint="Confirm Password"
+            android:id="@+id/re_password"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+
+            android:background="@drawable/shape"
+            android:layout_weight="5"
+            android:id="@+id/btregis"
+            android:textColor="@color/white"
+            />
+        <!--        <Button-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Back"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:id="@+id/btback"-->
+        <!--            android:background="@drawable/shape"-->
+        <!--            android:layout_weight="5"-->
+
+        <!--            />-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already an user? Login"
+            android:textColor="@color/red"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:id="@+id/backtologin"
+            android:clickable="true"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
